@@ -245,7 +245,7 @@ class SearchFormBase extends React.Component<Props, State> {
 const SearchFormBaseIntl = injectIntl(SearchFormBase);
 export { SearchFormBaseIntl };
 
-const SearchForm = React.forwardRef<Config, SearchFormBase>((props: Config, ref: React.Ref<any>) => (
+const SearchForm = React.forwardRef<Config, HTMLDivElement>((props: Config, ref: React.Ref<any>) => (
     <SearchFormBaseIntl {...props} innerRef={ref} />
 ));
 SearchForm.displayName = 'SearchForm';
